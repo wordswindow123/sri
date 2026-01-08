@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Discussion forum/community section</title>
+
+  <style>
+    body {
+      background-color: #e6f2ff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Create New Discussion</h2>
+
+  <textarea id="postText" placeholder="Type something..."></textarea><br><br>
+  <button onclick="post()">Post</button>
+
+  <hr>
+
+  <h2>Discussion</h2>
+
+  <p id="postResult"></p>
+
+  <h3>How do I improve my HTML?</h3>
+  <p>Posted by: Student</p>
+
+  <button onclick="up()">Upvote</button>
+  <span id="vote">0</span>
+
+  <br><br>
+
+  <button onclick="show()">Reply</button>
+
+  <div id="replyBox" style="display:none;">
+    <textarea id="replyText"></textarea><br>
+    <button onclick="reply()">Send Reply</button>
+  </div>
+
+  <p id="replyResult"></p>
+
+  <hr>
+
+  <script>
+    function up() {
+      var v = document.getElementById("vote");
+      v.innerHTML = Number(v.innerHTML) + 1;
+    }
+
+    function show() {
+      var box = document.getElementById("replyBox");
+      if (box.style.display === "none") {
+        box.style.display = "block";
+      } else {
+        box.style.display = "none";
+      }
+    }
+
+    function reply() {
+      var text = document.getElementById("replyText").value;
+      document.getElementById("replyResult").innerHTML = "You: " + text;
+    }
+
+    function post() {
+      var text = document.getElementById("postText").value;
+      document.getElementById("postResult").innerHTML = text;
+    }
+  </script>
+
+</body>
+</html>

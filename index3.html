@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment</title>
+        <style>
+            body{
+                font-family: arial, sans-serif;
+                background: #62e7e7;
+                margin: 20px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            h2{
+                display: inline-block;
+                background-color: red;
+                padding: 30px 80px;
+                border-radius: 10px;
+                border: 2px solid #e4e0d4;
+                color: white;
+                margin: 20px auto;
+                text-align: center;
+            }
+
+            form{
+                width: 450px;
+                margin: 40px auto;
+                background: white;
+                padding: 30px;
+                border-radius: 30px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            }
+
+            label{
+                font-weight: bold;
+            }
+
+            input[type="radio"]{
+                margin-right: 5px;
+                width: 15px;
+                height: 15px;
+            }
+
+            input[type="text"]{
+                width: 95%;
+                padding: 10px;
+                margin-top: 5px;
+                margin-bottom: 20px;
+                border: 1px solid #000000;
+                border-radius: 5px;
+            }
+
+            button{
+                width: 100%;
+                padding: 10px;
+                background-color: rgb(184, 202, 205);
+                border: 2px solid black;
+                color: rgb(27, 25, 25);
+                font-size: 16px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            button:hover{
+                background: #f58d8d;
+            }
+        </style>
+    </head>
+   
+    <body>
+        <h2>Course Payment</h2>
+        <form action="MYLMSsecurity_notice.html" method="GET">
+
+            <label>Student Name:</label><br><br>
+            <input type="text" name="student_name" placeholder="Enter your name" required><br><br>
+
+            <label>Matric Number:</label><br><br>
+            <input type="text" name="student_matric" placeholder="Enter your matric number" required><br><br>
+
+            <label>Payment Method:</label><br><br>
+                <input type="radio" name="payment_method" value="credit" required>Credit Card/Debit Card<br>
+                <input type="radio" name="payment_method" value="paypal" required>Paypal<br>
+                <input type="radio" name="payment_method" value="ewallet" required>E-wallet<br>
+                <input type="radio" name="payment_method" value="onlinebanking" required>Online Banking<br><br>
+        
+
+            <a href="dashboard.html">Back</a><br>
+            <button type="submit">Pay now</button>
+        </form>
+    </body>
+</html>         

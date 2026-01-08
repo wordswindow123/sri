@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Login  |  MyLMS</title>
+        
+        <style>
+            .container {
+                width: 400px;
+                padding: 50px;
+                border-radius: 50px;
+                background: rgba(255,255,255,0.1);
+                backdrop-filter: blur(10px);
+                box-shadow: 0 0 20px rgba(0,0,0,0.5);
+                border: 2px solid #d0e7ff;
+            }
+
+            body {
+                background-image: url("zootopia.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                margin: 0;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            h2 {
+                font-size: 50px;
+                text-align: center;
+                text-shadow: 2px 2px 2px grey;
+            }
+
+            label {
+                font-size: 25px;
+            }
+
+            input {
+                width: 390px;
+                background: rgba(255, 255, 255);
+                border-radius: 10px;
+                border: none;
+            }
+
+            button {
+                border-radius: 10px;
+                width: 200px;
+                background-color: bisque;
+            }
+
+            button:hover {
+                background-color: lightgray;
+            }
+        </style>
+    </head>
+
+    <body>
+    <div class="container">
+        <h2>Login to MyLMS</h2>
+    
+        <form class="form" action="dashboard.html" method="get">
+            <label for="username">Username</label><br>
+            <input type="text" id="username" required><br><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" required><br><br>
+
+            <button type="submit">Login</button>
+        </form>
+
+
+        <p>Don't have an account?
+            <a href="register_page.html">Register Here</a>
+        </p>
+    </div>
+    </body>
+
+</html>

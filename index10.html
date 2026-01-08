@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>User Dashboard  |  MyLMS</title>
+        
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background: linear-gradient(135deg, #c8e6c9, #e8f5e9);
+                margin: 0;
+                padding: 0px;
+            }
+
+            .header{
+                background-color: green;
+                color: white;
+                text-align: center;
+                padding: 25px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+            }
+
+            a {
+                display: inline-block;
+                margin-top: 10px;
+                padding: 8px 15px;
+                background-color: #ffffff;
+                color: green;
+                font-weight: bold;
+                border-radius: 10px;
+                text-decoration: none;
+            }
+
+            a:hover {
+                background-color: green;
+                color: white;
+            }
+            
+            .container {
+                width: 90%;
+                max-width: 900px;
+                margin: 30px auto;
+            }
+
+            h3{
+                margin-top: 0;
+            }
+
+            ul{
+                list-style-type: none;
+                padding: 0;
+            }
+
+            li {
+                background-color: #f1f8e9;
+                margin: 10px 0;
+                padding: 12px;
+                border-radius: 10px;
+                font-weight: bold;
+                transition: transform 0.2s, box-shadow 0.2s;
+            }
+
+            li:hover{
+                transform: translateX(5px);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+            }
+
+            .progress-bar {
+                width: 100%;
+                background-color: #dcedc8;
+                border-radius: 30px;
+                height: 30px;
+                overflow: hidden;
+                margin-top: 10px;
+            }
+
+            .progress-word {
+                height: 100%;
+                width: 45%;
+                background: linear-gradient(90deg, #66bb6a, #4caf50);
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <h2>Welcome to Your Dashboard</h2>
+            <p>YOUR LEARNING SPACE, YOUR GROWTH JOURNEY</p>
+            <a href="homepage.html">HOMEPAGE</a>
+            <a href="MYLMSprogress_tracker.html">PROGRESS TRACKER</a>
+            <a href="forum.html">FORUM</a>
+            <a href="MYLMSpayment.html">PAYMENT</a>
+            <a href="profile.html">Edit Profile</a>
+        </div>
+        
+        <div class="container">
+            <div class="courses">
+                <h3>Your Enrolled Courses</h3>
+                <ul>
+                    <li>Algorithm & Programming</li>
+                    <li>Funamentals of Web Technology</li>
+                    <li>Professional Ethics & Workplace Safety</li>
+                    <li>Computer Architecture</li>
+                </ul>
+            </div>
+
+            <br><br>
+
+            <div class="progress">
+                <h3>Your Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress-word">45%</div>
+                </div>
+            </div>
+        </div>
+
+        <a href="cert.pdf">Print Your Certificate Here!!!</a>
+    </body>
+</html>

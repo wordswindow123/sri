@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head> <title>Security Notice</title>
+    
+        <style>
+            body{
+                font-family: arial, sans-serif;
+                background: #edf100;
+                margin: 20px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            h2{
+                display: inline-block;
+                background-color: rgb(255, 69, 69);
+                padding: 30px 80px;
+                border-radius: 10px;
+                border: 2px solid #e4e0d4;
+                color: rgb(255, 255, 255);
+                margin: 20px auto;
+                text-align: center;
+            }
+
+            form{
+                width: 450px;
+                margin: 20px auto;
+                background: white;
+                padding: 30px;
+                border-radius: 10%;
+                box-shadow:0 0 10px black;
+            }
+
+            input[type="checkbox"]{
+                margin-right: 15px;
+                width: 15px;
+                height: 15px;
+            }
+
+            button{
+                width: 100%;
+                padding: 10px;
+                background-color: rgb(184, 202, 205);
+                border: 2px solid black;
+                color: rgb(27, 25, 25);
+                font-size: 16px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            button:hover{
+                background: #f58d8d;
+            }
+        </style>
+</head>
+    <body>
+        <h2>SECURITY NOTICE</h2>
+        <form action="MYLMSpayment_successful.html" method="GET">
+
+            <h3>Please read the following security information carefully before proceeding with the online banking website</h3><br>
+            <h4> 
+                <li>Ensure that you are accessing the afficial and secure banking website or any online transfer.</li>
+                <li>Do not share your username, password, TAC/OTP, or any confidential information.</li>
+                <li>Verify the recipient's bank account details, E-wallet and transfer amount carefully</li>
+                <li>Avoid using public or unsecured devices for online transfer</li>
+                <li>Always log out after completing your transaction.</li>
+                <li>Report any suspicious or unauthorized activities immediately</li>
+            </h4>
+           
+            <label>
+                <input type="checkbox" id="agree" required>I have read and agree to the security notice.
+            </label><br><br>
+            <a href="MYLMSpayment.html">Back</a>
+            <button type="submit">Proceed with Transfer</button>
+            
+        </form>
+    </body>
+</html>
